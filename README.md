@@ -42,3 +42,23 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+
+
+## Local DB Steps *
+
+## MySQL Community Setup
+
+- Download MySQL Community (https://dev.mysql.com/downloads/mysql/)
+- Use the following credentials: MySQL Host Address - localhost, Username - root, Password - root, PORT: 3306
+- COnnect
+
+## Using DB Files
+
+1. Open backend files in Eclipse
+
+2. Login to MySQL Community with your credentials (If you didn't change the password during setup, your username should be root without any password).
+
+3. CREATE or use an existing DB: `CREATE DATABASE <your-db-name>` or `USE DATABASE <your-db-name>;` (no modal yet..will be edited in the future)
+
+4. To connect, go to backend > resources > application.properties and define your credentials: .url=jdbc:mysql://localhost:3306/database-name, .username=root, .password=root
